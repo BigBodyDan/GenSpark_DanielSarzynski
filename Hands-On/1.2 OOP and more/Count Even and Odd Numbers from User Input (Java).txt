@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+
+		// Read number of values
+		int n = in.nextInt();
+
+		// TODO: Create an array to store the numbers
+		int[] numbers = new int[n];
+
+		int evenCount = 0;
+		int oddCount = 0;
+
+		// TODO: Read n integers into the array
+		for (int i = 0; i < n; i++){
+			numbers[i] = in.nextInt();
+
+			// TODO: Count how many numbers are even and how many are odd
+			if (numbers[i] % 2 == 0){
+				evenCount++;
+			} else{
+				oddCount++;
+			}
+		}
+
+		// TODO: Print the results in the required format
+		System.out.println("Even: " + evenCount);
+		System.out.println("Odd: " + oddCount);
+
+		in.close();
+		
+	}
+}

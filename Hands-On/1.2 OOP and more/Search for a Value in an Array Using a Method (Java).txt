@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        // Read number of elements
+        int n = in.nextInt();
+
+        // Create array
+        int[] numbers = new int[n];
+
+        // Read array elements
+        for (int i = 0; i < n; i++) {
+            numbers[i] = in.nextInt();
+        }
+
+        // Read target value
+        int target = in.nextInt();
+
+        // Call search method
+        int result = findIndex(numbers, target);
+
+        // Print result
+        System.out.println(result);
+
+        in.close();
+    }
+
+    // TODO: Implement this method
+    // Returns the index of target if found, otherwise -1
+    public static int findIndex(int[] arr, int target) {
+
+        // TODO: Write search logic here
+        for (int i = 0; i < arr.length; i++){
+            if (arr[i] == target){
+                return i;
+            }
+        }
+
+        return -1; // placeholder return
+    }
+}
