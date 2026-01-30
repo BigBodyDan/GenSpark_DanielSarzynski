@@ -1,0 +1,6 @@
+1|John Pork|04/20/1969|Computer Science|John.Pork@gmail.com|1,5
+2|Tim Cheese|5/5/1955|Engineering|tim@cheese.net|1,2
+3|Marvin Beak|1/2/2003|Aerospace|marvinbeak@boeing.com|2,3
+4|Pengu|1/1/2000|Culinary Arts|pengu@yahoo.com|1,4
+5|Pablo|4/5/1999|Music|pablo@gmail.com|1,2,3,4,5
+6|Jane Doe|2/16/2000|Criminal Justice|jane.doe@neps.gov|none

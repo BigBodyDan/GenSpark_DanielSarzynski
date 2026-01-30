@@ -1,0 +1,5 @@
+1|Calculus|3|1,2,4,5
+2|Chemistry|3|2,3,5
+3|Aerodynamics|4|3,5
+4|Cooking|2|4,5
+5|Java|3|1,5
