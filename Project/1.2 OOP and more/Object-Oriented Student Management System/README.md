@@ -94,15 +94,47 @@ Course ID | Title | List of StudentsIDs Enrolled
 
 ### Usage Instructions
 
-When the program starts, you'll see a menu with 6 options  
+When the program starts, you'll see a menu with 4 options  
 Enter the number corresponding to your desired action:
 
+    --- Student Management System ---
+    1. Student Management Menu
+    2. Course Management Menu
+    3. Enrollment Management Menu
+    0. Exit
+    -------------------------------------------
+
+Student Management Menu
+
+    --- Student Management ---
     1. Add Student
-    2. View All Students
-    3. Search Student by ID
-    4. Update Student
-    5. Delete Student
-    6. Exit
+    2. Update Student
+    3. Delete Student
+    4. View Student
+    5. List All Students
+    0. Back to Main Menu
+    -------------------------------------------
+
+Course Management Menu
+
+    --- Course Management ---
+    1. Add Course
+    2. Update Course
+    3. Delete Course
+    4. View Course
+    5. List All Courses
+    0. Back to Main Menu
+    -------------------------------------------
+
+Enrollment Management Menu
+
+    --- Enrollment Management ---
+    1. Enroll Student
+    2. Withdraw Student
+    3. View Student's Courses
+    4. View Course's Students
+    0. Back to Main Menu
+    -------------------------------------------
 
 Follow the prompts for each operation  
-Data is automatically saved to `students.txt` after each modification
+Data is automatically saved to files after each modification
