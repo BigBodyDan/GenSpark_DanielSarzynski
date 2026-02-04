@@ -1,0 +1,11 @@
+select 
+    d.dept_name, 
+    count(e.emp_id) as employee_count,
+    sum(e.salary) as total_salary,
+    avg(e.salary) as avg_salary
+from
+    employees as e 
+join 
+    departments as d on e.dept_id = d.dept_id
+group by 
+    d.dept_name;

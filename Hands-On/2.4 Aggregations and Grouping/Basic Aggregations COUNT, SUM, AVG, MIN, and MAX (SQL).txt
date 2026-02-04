@@ -1,0 +1,8 @@
+select 
+    count(emp_id) as employee_count,
+    sum(salary) as total_salary,
+    avg(salary) as average_salary,
+    min(salary) as min_salary,
+    max(salary) as max_salary
+from 
+    employees;

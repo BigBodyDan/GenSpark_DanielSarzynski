@@ -1,3 +1,6 @@
-SELECT name 
-FROM employees
-WHERE department = 'Sales';
+SELECT 
+    name 
+FROM 
+    employees
+WHERE 
+    department = 'Sales';

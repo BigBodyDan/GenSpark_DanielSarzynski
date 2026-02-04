@@ -1,0 +1,25 @@
+with jan_2026_payroll as (
+    select 
+        emp_id, 
+        amount
+    from 
+        payroll
+    where 
+        payroll_month = '2026-01'
+)
+
+select 
+    d.dept_name,
+    count(e.emp_id) as employee_count,
+    sum(jan26.amount) as total_payroll
+from 
+    jan_2026_payroll as jan26
+join 
+    employees as e on e.emp_id = jan26.emp_id
+join 
+    departments as d on e.dept_id = d.dept_id
+group by 
+    d.dept_id
+order by    
+    total_payroll desc,
+    d.dept_name asc;

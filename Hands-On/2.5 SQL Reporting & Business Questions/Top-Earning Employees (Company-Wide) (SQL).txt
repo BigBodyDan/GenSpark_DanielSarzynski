@@ -1,0 +1,24 @@
+with jan_2026_payroll as (
+    select 
+        emp_id, 
+        amount
+    from 
+        payroll
+    where 
+        payroll_month = '2026-01'
+)
+
+select 
+    e.emp_name,
+    d.dept_name,
+    jan26.amount
+from 
+    employees as e
+join 
+    departments as d on e.dept_id = d.dept_id
+join 
+    jan_2026_payroll as jan26 on e.emp_id = jan26.emp_id
+order by
+    jan26.amount desc,
+    e.emp_name asc
+limit 3;
