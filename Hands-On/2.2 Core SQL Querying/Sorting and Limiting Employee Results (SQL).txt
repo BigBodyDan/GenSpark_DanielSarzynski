@@ -1,0 +1,4 @@
+select name 
+from employees
+order by salary desc
+limit 3;
