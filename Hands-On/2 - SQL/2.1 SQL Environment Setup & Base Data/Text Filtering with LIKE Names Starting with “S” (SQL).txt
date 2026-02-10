@@ -1,0 +1,8 @@
+SELECT 
+    name 
+FROM 
+    employees
+WHERE 
+    name LIKE 'S%'
+ORDER BY 
+    name ASC;

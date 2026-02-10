@@ -1,0 +1,13 @@
+select 
+    department,
+    count(emp_id) as employee_count,
+    sum(salary) as total_salary,
+    avg(salary) as avg_salary,
+    min(salary) as min_salary,
+    max(salary) as max_salary
+from 
+    employees
+group by 
+    department
+order by 
+    department asc;

@@ -1,0 +1,8 @@
+SELECT 
+    name 
+FROM 
+    employees
+WHERE 
+    department = 'Sales'
+    AND salary >= 50000 
+    and salary <= 70000;

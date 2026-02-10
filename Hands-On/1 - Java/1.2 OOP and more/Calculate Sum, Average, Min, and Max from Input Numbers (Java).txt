@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		
+		// Read number of values
+		int n = in.nextInt();
+
+		// TODO: Create an array to store the numbers
+		int[] numbers = new int[n];
+
+		int sum = 0;
+		int min = Integer.MAX_VALUE;
+		int max = Integer.MIN_VALUE;
+
+		// TODO: Read n integers into the array
+		for (int i = 0; i < n; i++){
+			numbers[i] = in.nextInt();
+	
+		// TODO: Calculate sum, average, min, and max
+			sum += numbers[i];
+			if (numbers[i] < min){
+				min = numbers[i];
+			}
+			if (numbers[i] > max){
+				max = numbers[i];
+			}
+		}
+
+		int average = sum / n;
+
+		// TODO: Print results in the required format
+		System.out.println("Sum: " + sum);
+		System.out.println("Average: " + average);
+		System.out.println("Min: " + min);
+		System.out.println("Max: " + max);
+
+		in.close();
+
+	}
+}

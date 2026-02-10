@@ -1,0 +1,9 @@
+select 
+    distinct department 
+from 
+    employees
+where 
+    salary >= 70000 
+    and department is not null
+order by 
+    department asc;

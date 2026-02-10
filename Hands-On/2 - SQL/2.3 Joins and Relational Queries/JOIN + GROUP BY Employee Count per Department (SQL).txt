@@ -1,0 +1,12 @@
+select 
+    d.dept_name, 
+    count(*) as employee_count
+from 
+    employees as e
+join 
+    departments as d on e.dept_id = d.dept_id
+group by 
+    d.dept_name
+order by 
+    employee_count desc,
+    d.dept_name asc;

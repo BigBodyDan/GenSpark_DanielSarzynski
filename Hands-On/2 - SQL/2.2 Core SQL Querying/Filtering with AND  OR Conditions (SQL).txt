@@ -1,0 +1,10 @@
+select 
+    name 
+from 
+    employees
+where 
+    (department = 'Sales' 
+    or department = 'Engineering')
+    and salary >= 60000
+order by 
+    salary asc;

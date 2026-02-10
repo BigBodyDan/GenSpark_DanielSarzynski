@@ -1,0 +1,9 @@
+select 
+    e.emp_name, 
+    d.dept_name
+from 
+    employees as e
+left join 
+    departments as d on e.dept_id = d.dept_id
+order by 
+    emp_id asc;

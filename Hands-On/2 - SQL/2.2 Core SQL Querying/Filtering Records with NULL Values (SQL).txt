@@ -1,0 +1,6 @@
+select 
+    name 
+from 
+    employees 
+where  
+    department is null;

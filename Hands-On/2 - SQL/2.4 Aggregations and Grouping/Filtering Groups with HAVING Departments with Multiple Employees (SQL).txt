@@ -1,0 +1,10 @@
+select 
+    department,
+    count(emp_id) as employee_count,
+    avg(salary) as avg_salary
+from 
+    employees
+group by 
+    department
+having 
+    employee_count >= 3;

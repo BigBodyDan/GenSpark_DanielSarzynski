@@ -1,0 +1,10 @@
+select 
+    e.emp_name, 
+    d.dept_name, 
+    e.salary
+from 
+    employees as e
+join 
+    departments as d on e.dept_id = d.dept_id
+order by 
+    salary desc;

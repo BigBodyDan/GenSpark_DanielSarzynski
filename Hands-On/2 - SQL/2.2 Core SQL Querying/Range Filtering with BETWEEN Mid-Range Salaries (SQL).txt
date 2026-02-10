@@ -1,0 +1,9 @@
+select 
+    name 
+from 
+    employees
+where 
+    salary between 55000 and 70000
+order by 
+    salary asc,
+    id asc;

@@ -1,0 +1,7 @@
+select 
+    e.emp_name, 
+    d.dept_name
+from 
+    employees as e
+join 
+    departments as d on e.dept_id = d.dept_id;
