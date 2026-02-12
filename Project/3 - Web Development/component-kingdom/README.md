@@ -1,16 +1,26 @@
-# React + Vite
+# Component Kingdom — Build a UI from Blocks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Overview
 
-Currently, two official plugins are available:
+Build a small React page by breaking the UI into reusable components. 
+The goal is to learn component-based development and how React UIs scale by composing smaller pieces.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Requirements (Must Have)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Create a single-page UI with these sections:
+   - Header (title + short subtitle)
+   - Main content area
+   - Sidebar (or info panel)
+   - Footer
+2. Create at least 5 components, for example:
+   - Header
+   - Footer
+   - Sidebar
+   - MainContent
+   - Card (reused)
+3. Component reuse requirement
+   - Use one reusable component (ex: Card) at least 3 times with different content.
+4. List rendering requirement
+   - Use map() over an array to render repeated UI (ex: render cards from an array of objects).
+5. Basic styling:
+   - Simple CSS is fine, but the page must be readable (spacing, headings, alignment).
