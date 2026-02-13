@@ -4,21 +4,21 @@ import Toggle from "./components/Toggle.jsx";
 import ListManager from "./components/ListManager.jsx";
 
 function App() {
-  const [lastAction, setLastAction] = useState("None");
+    const [lastAction, setLastAction] = useState("None");
 
-  return (
-      <div className="container-fluid py-5">
-        <h1 className="text-center mb-4 fw-bold">State Sorcery</h1>
+    return (
+        <div className="container-fluid py-5">
+            <h1 className="text-center mb-4 fw-bold">State Sorcery</h1>
 
-        <Counter setLastAction={setLastAction} />
-        <Toggle setLastAction={setLastAction} />
-        <ListManager setLastAction={setLastAction} />
+            <Counter setLastAction={setLastAction} />
+            <Toggle setLastAction={setLastAction} />
+            <ListManager setLastAction={setLastAction} />
 
-        <div className="alert alert-info text-center mt-4">
-          <strong>Last Action:</strong> {lastAction}
+            <div className="alert alert-info text-center mt-4">
+                <strong>Last Action:</strong> {lastAction}
+            </div>
         </div>
-      </div>
-  );
+    );
 }
 
 export default App

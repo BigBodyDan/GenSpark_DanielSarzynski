@@ -21,35 +21,34 @@ export default function CourseCatalog() {
     };
 
     return (
-      <div>
-          <h2 className="text-center mb-4 fw-bold">Course Catalog</h2>
+        <div>
+            <h2 className="text-center mb-4 fw-bold">Course Catalog</h2>
 
-          <div className="row">
-              {courses.map((course) => (
-                  <div key={course.id} className="col-md-4 mb-3">
-                      <CourseCard
-                          title={course.title}
-                          category={course.category}
-                          level={course.level}
-                          rating={course.rating}
-                          onSelect={() => handleSelect(course)}
-                      />
-                  </div>
-              ))}
-          </div>
+            <div className="row">
+                {courses.map((course) => (
+                    <div key={course.id} className="col-md-4 mb-3">
+                        <CourseCard
+                            title={course.title}
+                            category={course.category}
+                            level={course.level}
+                            rating={course.rating}
+                            onSelect={() => handleSelect(course)}
+                        />
+                    </div>
+                ))}
+            </div>
 
-          {selectedCourse && (
-              <div className="card mt-4 shadow">
-                  <div className="card-body">
-                      <h4 className="card-title bd fw-bold">Selected Course</h4>
-                      <p><strong>Title:</strong> {selectedCourse.title}</p>
-                      <p><strong>Category:</strong> {selectedCourse.category}</p>
-                      <p><strong>Level:</strong> {selectedCourse.level}</p>
-                      <p><strong>Rating:</strong> {selectedCourse.rating}</p>
-                  </div>
-              </div>
-          )}
-
-      </div>
+            {selectedCourse && (
+                <div className="card mt-4 shadow">
+                    <div className="card-body">
+                        <h4 className="card-title bd fw-bold">Selected Course</h4>
+                        <p><strong>Title:</strong> {selectedCourse.title}</p>
+                        <p><strong>Category:</strong> {selectedCourse.category}</p>
+                        <p><strong>Level:</strong> {selectedCourse.level}</p>
+                        <p><strong>Rating:</strong> {selectedCourse.rating}</p>
+                    </div>
+                </div>
+            )}
+        </div>
     );
 }
