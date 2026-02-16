@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button of Fate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light d-flex justify-content-center align-items-center">
+<div class="container-fluid py-5 text-center">
+
+    <h1 class="mb-4 fw-bold">Button of Fate</h1>
+
+    <div id="fateDisplay" class="p-4 mb-4 border rounded fst-italic bg-info text-light">
+        Your fate awaits.
+    </div>
+
+    <h4 class="mb-4">
+        Fate Meter: <span id="fateMeter">0</span>
+    </h4>
+
+    <div id="prophecy" class="alert alert-info d-none">
+        A hidden path reveals itself to the bold.
+    </div>
+
+    <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
+        <button class="btn btn-success fate-btn" data-action="blessing">Blessing</button>
+        <button class="btn btn-danger fate-btn" data-action="curse">Curse</button>
+        <button class="btn btn-primary fate-btn" data-action="reveal">Reveal</button>
+        <button class="btn btn-info text-white fate-btn" data-action="reset">Reset</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
